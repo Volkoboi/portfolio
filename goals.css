@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: url("./img/6_tips_to_boost_your_motivation_during_lockdown_hero.jpg") no-repeat center center fixed;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    padding: 3px 4px;
+    border-radius: 5px;
+}
+
+header nav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.goals-link {
+    color: gold;
+
+}
+
+.goals-link:hover {
+    background-color: gold;
+    color: #000;
+}
+
+main {
+    max-width: 867px;
+    margin: 0 auto;
+
+}
+
+#table {
+    background-color: white;
+    padding: 20px 0;
+    border-radius: 20px;
+    animation: tableAn 0.7s ease-in-out;
+}
+
+#table h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+table {
+    border: 1px solid black;
+    margin: 10px auto;
+}
+
+th, tr, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#motivation {
+    background-color: black;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    animation: motivationAn 0.7s ease-in;
+}
+
+#motivation h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#motivation ol {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#motivation ol li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    text-align: end;
+    padding: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+footer ul li {
+    margin-right: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+footer ul li a:hover {
+    opacity: 0.5;
+}
+
+
+@keyframes tableAn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes motivationAn {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

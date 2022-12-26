@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: url("./img/scattered-forcefields.png") no-repeat center center fixed;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    padding: 3px 4px;
+    border-radius: 5px;
+}
+
+header nav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.goals-link {
+    color: gold;
+
+}
+
+.goals-link:hover {
+    background-color: gold;
+    color: #000;
+}
+
+main {
+    max-width:867px;
+    margin:10px auto;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: white;
+    animation: introAn 0.7s ease-in;
+}
+
+.intro img {
+    width: 400px;
+    height: 500px;
+    object-fit: contain;
+}
+
+.intro article {
+    padding: 10px;
+    margin: auto 0;
+}
+
+.intro h3 {
+    font-size: 18px;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.intro ul {
+    list-style-type: none;
+    text-align: end;
+}
+
+.intro ul li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#about {
+    margin: 10px auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding:0 20px 20px 20px;
+    animation: aboutAn 0.7s ease-in;
+}
+
+#about h2 {
+    font-size: 30px;
+    padding: 20px;
+}
+
+#about p {
+    font-size: 20px;
+    padding: 20px;
+}
+
+#contact {
+    background-color: white;
+    width: 100%;
+}
+
+#contact h3 {
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+form label {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 20px;
+    max-width: 100%;
+}
+
+form button {
+    padding: 10px 15px;
+    align-self: end;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: end;
+    padding: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+footer ul li {
+    margin-right: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+
+@keyframes introAn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes aboutAn {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
